@@ -37,42 +37,42 @@ export default function Home() {
           {/* ズーム可能なエリア */}
           <ZoomArea height="600px">
             <HexGrid
-						width="100vw"
-						height="100vh"
-						viewBox="-200 -200 400 400" // 十分に大きくして余白を作る（見切れるのを防ぐ）
-					>
-						<Layout
-							size={{ x: 10, y: 10 }}
-							flat={false}
-							spacing={1.04}
-							origin={{ x: 0, y: 0 }}
-						>
-              <Hexagon
-                key={"0"}
-                q={0}
-                r={0}
-                s={0}
-                fill={"#000000"}
-                stroke={"#000000"}
-                strokeWidth={0.5}
+              width="100%"
+              height="100%"
+              viewBox="-50 -50 100 100"
+            >
+              <Layout
+                size={{ x: 10, y: 10 }}
+                flat={false}
+                spacing={1.04}
+                origin={{ x: 0, y: 0 }}
               >
-                <text
-                  x="0"
-                  y="0"
-                  textAnchor="middle"
-                  dominantBaseline="central"
-                  style={{
-                    fontSize: "0.6em",
-                    fill: "#000000",
-                    stroke: "none",
-                    fontWeight: "normal",
-                  }}
+                <Hexagon
+                  key={"0"}
+                  q={0}
+                  r={0}
+                  s={0}
+                  fill={"#000000"}
+                  stroke={"#000000"}
+                  strokeWidth={0.5}
                 >
-                  S
-                </text>
-              </Hexagon>
-						</Layout>
-					</HexGrid>
+                  <text
+                    x="0"
+                    y="0"
+                    textAnchor="middle"
+                    dominantBaseline="central"
+                    style={{
+                      fontSize: "0.6em",
+                      fill: "#000000",
+                      stroke: "none",
+                      fontWeight: "normal",
+                    }}
+                  >
+                    S
+                  </text>
+                </Hexagon>
+              </Layout>
+            </HexGrid>
           </ZoomArea>
         </div>
         
