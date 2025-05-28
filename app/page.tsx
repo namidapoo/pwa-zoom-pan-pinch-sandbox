@@ -10,7 +10,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen p-8 font-[family-name:var(--font-geist-sans)] touch-none">
+    <div className="min-h-screen p-8 font-[family-name:var(--font-geist-sans)]">
       <header className="mb-2 text-center">
         <h1 className="text-2xl font-bold">ズーム・パン・ピンチのサンプル</h1>
         <p className="text-gray-600 dark:text-gray-400">
