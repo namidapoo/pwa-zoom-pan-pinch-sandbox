@@ -10,9 +10,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen p-8 font-[family-name:var(--font-geist-sans)]"
-      style={{ touchAction: "none" }}
-    >
+    <div className="min-h-screen p-8 font-[family-name:var(--font-geist-sans)] touch-none">
       <header className="mb-2 text-center">
         <h1 className="text-2xl font-bold">ズーム・パン・ピンチのサンプル</h1>
         <p className="text-gray-600 dark:text-gray-400">
@@ -24,8 +22,7 @@ export default function Home() {
       <div className="flex justify-center my-2">
         <button
           onClick={handleButtonClick}
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-colors"
-          style={{ touchAction: "auto" }}
+          className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-colors touch-auto"
         >
           アラートを表示
         </button>
